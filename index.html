@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
 </head>
+<style>
+    .hidden {
+        position: absolute;
+
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+    }
+</style>
 <body>
 
     <header>
@@ -17,7 +32,8 @@
             </ul>
             <ul>
                 <li><a href="info@devstudio.com"></a></li>
-                <li><a href ="+380961111111">+38 096 1111111</a></li>
+                <li><a href ="tel:+380961111111">+38 096 1111111</a></li>
+                <li><a href ="mailto:sergey@gmail.com">Send email</a></li>
             </ul>
         </nav>    
     </header>
@@ -27,8 +43,8 @@
             <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
             <button type="button">Заказать услугу</button>
         </section>
-        <section class="about">
-            <h2>Перечень свойств команды</h2>
+        <section>
+            <h2 class="hidden">Перечень свойств команды</h2>
             <ul>
                 <li>
                     <h3>Внимание к деталям</h3>
@@ -66,7 +82,7 @@
             <h2>Наша команда</h2>
             <ul>
                 <li>
-                    <img src="images/img1.jpg" alt="Игорь" width="270">
+                    <img src="images/img1.jpg" alt="Игорь" width="270px">
                     <h3>Игорь Демьяненко</h3>
                     <p lang="en">Product Designer</p>
                 </li>
