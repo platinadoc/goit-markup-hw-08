@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -26,27 +29,28 @@
 <body>
 
     <header>
-        <nav> <a href="/"><span>Web</span>Studio</a>
-            <ul>
-                <li><a href="">Студия</a></li>
-                <li><a href="">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>           
+        <nav> 
+            <a href="" class="logo"><span class="web">Web</span>Studio</a>
+            <ul class="site-nav list">
+                <li><a href="" class="link current">Студия</a></li>
+                <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+                <li><a href="" class="link">Контакты</a></li>           
             </ul>
         </nav>    
-            <ul>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 1111111</a></li>
+            <ul class="auth-nav list>
+                <li><a href="mailto:info@devstudio.com" class="info-nav">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111" class="info-nav">+38 096 1111111</a></li>
             </ul>  
     </header>
     
     <main>
-        <section>
+        <section class="section heroes">
             <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button type="button">Заказать услугу</button>
+            <button type="button" class="button primary button-man">Заказать услугу</button>
         </section>
-        <section>
+        <section class="section">
             <h2 class="hidden">Перечень свойств команды</h2>
-            <ul>
+            <ul class="special-title list">
                 <li>
                     <h3>Внимание к деталям</h3>
                     <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -66,9 +70,9 @@
             </ul>
         </section>
 
-        <section>
-            <h2>Чем мы занимаемся</h2>
-            <ul>
+        <section class="section">
+            <h2 class="section-work">Чем мы занимаемся</h2>
+            <ul class="work list">
                 <li>
                     <img src="images/rabota1.jpg" alt="Работа1" width="370">
                 </li>
@@ -79,9 +83,9 @@
             </ul>
         </section>
 
-        <section>
-            <h2>Наша команда</h2>
-            <ul>
+        <section class="section">
+            <h2 class="section-work">Наша команда</h2>
+            <ul class="staff list">
                 <li>
                     <img src="images/img1.jpg" alt="Игорь" width="270">
                     <h3>Игорь Демьяненко</h3>
@@ -107,12 +111,12 @@
     </main>
 
     <footer>
-        <a href="/"><span>Web</span>Studio</a>
-        <address>
-            <ul>
-                <li><a href="/">г.Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+380 96 1111111</a> </li>
+        <a class="logo" href=""><span class="web">Web</span>Studio</a>
+        <address id="address">
+            <ul class="auth-nav list">
+                <li><a href="" class="auth footer">г.Киев, пр-т Леси Украинки, 26</a></li>
+                <li><a href="mailto:info@devstudio.com" class="info footer">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111" class="info footer">+380 96 1111111</a> </li>
             </ul>
         </address>
     </footer>
