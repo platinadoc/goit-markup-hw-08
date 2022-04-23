@@ -71,10 +71,9 @@ body{
    letter-spacing: 0.02em;
    color:var(--primary-text-color);
    }
-
-.heroes{ 
-   background-color:var(--primary-background-color);
-   }
+.heroes{
+  background-color: var(--primary-background-color);
+} 
              
 .header{
    font-weight: 900;
@@ -186,12 +185,11 @@ body{
           color: var(--primary-white-color);
           } 
          
-        .auth{
-          
-          text-decoration: none;
-          color:var(--footer-address-color);
+        footer .auth{
+           text-decoration: none;
+           color: var(--primary-white-color);
           }
-        .info .footer{
-          color:var(--foorer-text-color);
+        footer .info{
           text-decoration: none;
+          color: var(--primary-white-color);
           } 
