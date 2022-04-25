@@ -154,7 +154,6 @@ body {
 .special-title li {
   display: block;
   width: 270px;
-  height: 75px;
 }
 
 .special-title h3 {
@@ -170,6 +169,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  height: 75px;
 }
 
 /*чем занимаемся*/
