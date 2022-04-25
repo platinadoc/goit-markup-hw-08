@@ -60,7 +60,7 @@ body {
 .site-nav {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
   letter-spacing: 0.02em;
 }
 
@@ -91,9 +91,9 @@ body {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: #757575;
 }
 
 .heroes {
@@ -151,13 +151,25 @@ body {
 }
 
 /*Студия */
+.special-title li {
+  display: block;
+  width: 270px;
+  height: 75px;
+}
+
 .special-title h3 {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+}
+
+.special-title p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 /*чем занимаемся*/
@@ -269,7 +281,9 @@ ul.contacts {
   list-style: none;
 }
 
-header .contacts .email:hover {
+.contacts .address:hover,
+.contacts .email:hover,
+.contacts .phone:hover {
   text-decoration: none;
   color: #2196f3;
 }
@@ -278,6 +292,8 @@ header .contacts .email,
 header .contacts .phone {
   text-decoration: none;
   color: #757575;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 footer .contacts .address {
