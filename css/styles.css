@@ -20,7 +20,7 @@
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   /*--heder-border-color: #ececec;*/
 }
-*/ body {
+body {
   background-color: var(--white-color);
   color: var(--main-color);
   font-family: var(--main-font);
@@ -30,7 +30,6 @@
   letter-spacing: 0.03em;
 }
 
-/*hidden title*/
 .hidden-title {
   position: absolute;
   width: 1px;
@@ -44,7 +43,6 @@
   overflow: hidden;
 }
 
-/*logo*/
 .logo {
   font-family: var(--logo-font);
   font-style: normal;
@@ -70,10 +68,9 @@
   text-align: center;
 }
 /*
-header ==================================================================
+header =====
 */
 
-/*navigation*/
 .navigation,
 .contacts-header {
   font-style: normal;
@@ -96,7 +93,6 @@ header ==================================================================
   color: var(--brand-color);
 }
 
-/*header contacts*/
 .contacts-header .contact {
   text-decoration: none;
   color: var(--main-gray-color);
@@ -107,10 +103,9 @@ header ==================================================================
 }
 
 /*
-index main ==============================================================
+index main =====
 */
 
-/*hero*/
 .hero {
   background-color: var(--background-dark-color);
 }
@@ -166,12 +161,10 @@ index main ==============================================================
   height: 75px;
 }
 
-/*specialization*/
 .specialization-list {
   list-style: none;
 }
 
-/*team*/
 .team {
   background-color: var(--background-gray-color);
 }
@@ -194,7 +187,7 @@ index main ==============================================================
 }
 
 /*
-portfolio main ==========================================================
+portfolio main =====
 */
 
 /*buttons*/
@@ -222,7 +215,6 @@ portfolio main ==========================================================
   background-color: var(--brand-color);
 }
 
-/*exemple-gallery*/
 .exemple-gallery > li {
   width: 370px;
   height: 404px;
@@ -240,7 +232,7 @@ portfolio main ==========================================================
 }
 
 /*
-footer ==================================================================
+footer =====
 */
 .contacts {
   color: var(--white-color);
