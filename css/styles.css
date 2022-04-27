@@ -70,6 +70,21 @@ body {
 /*
 header =====
 */
+.exemple-gallery h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+}
+
+.exemple-gallery p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--main-gray-color);
+}
 
 .navigation,
 .contacts-header {
