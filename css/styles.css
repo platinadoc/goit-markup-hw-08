@@ -152,13 +152,10 @@ index main =====
   text-align: center;
 }
 .features-text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.72;
   letter-spacing: 0.03em;
-  width: 270px;
-  height: 75px;
+  color: var(--main-gray-color);
 }
 
 .specialization-list {
@@ -201,7 +198,7 @@ portfolio main =====
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.62;
   letter-spacing: 0.03em;
   text-align: center;
   border-style: hidden;
