@@ -171,8 +171,8 @@ header .container {
 .navigation-list > li,
 .contacts-header > li {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  margin-top: -32px;
+  margin-bottom: -32px;
 }
 
 .navigation-list .link {
