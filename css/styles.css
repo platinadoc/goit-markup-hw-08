@@ -41,14 +41,17 @@ h5,
 h6,
 p,
 ul {
-  display: flex;
   padding: 0;
   margin: 0;
 }
 
+ul {
+  display: flex;
+}
+
 img {
   display: block;
-  max-width: 100%;
+  /*max-width: 100%;*/
   padding: 0;
   margin: 0;
 }
@@ -317,12 +320,14 @@ index main =====
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 10px;
+  text-align: center;
 }
 .team-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   justify-content: center;
+  text-align: center;
   color: var(--main-gray-color);
 }
 
