@@ -107,13 +107,11 @@ li {
 
 /*h2 title*/
 .title {
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
 }
 /*
 header =====
@@ -258,14 +256,12 @@ index main =====
 /*features*/
 .features-list {
   margin-left: calc(-1 * var(--list-gap));
-  max-height: 101px;
 }
 
 .features-list > li {
-  width: 270px;
   /*height: 101px;*/
   margin-left: var(--list-gap);
-  flex-basis: calc(100% / 4);
+  flex-basis: calc(100% / 4 - 30px);
 }
 
 .features-title {
