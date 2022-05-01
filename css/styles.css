@@ -111,11 +111,13 @@ li {
 /*h2 title*/
 .title {
   margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
 }
+
 /*
 header =====
 */
@@ -300,6 +302,7 @@ index main =====
 }
 
 .team-list {
+  /*text-align: center;*/
   margin-left: calc(-1 * var(--list-gap));
 }
 .team-list > li {
