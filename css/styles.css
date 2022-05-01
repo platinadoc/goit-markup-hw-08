@@ -420,6 +420,7 @@ footer =====
   align-items: baseline;
   display: inline-block;
   margin-left: 190px;
+  /*padding-left: 205px;*/
 }
 .contacts-list {
   flex-direction: column;
