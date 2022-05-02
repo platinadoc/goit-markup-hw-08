@@ -17,8 +17,8 @@
   --header-border-color: #ececec;
   --btn-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  --box-shadow: 0px 1 px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   --hero-btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --big-padding: 94px;
   --list-gap: 30px;
@@ -45,9 +45,9 @@ ul {
   margin: 0;
 }
 
-ul {
+/* ul {
   display: flex;
-}
+} */
 
 img {
   display: block;
@@ -61,8 +61,8 @@ li {
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -116,6 +116,7 @@ li {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
 }
 
 /*
@@ -145,6 +146,7 @@ header {
 }
 
 header .container {
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -156,6 +158,7 @@ header .container {
 
 .navigation-list,
 .contacts-header {
+  display: flex;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -167,6 +170,7 @@ header .container {
 .contacts-header > li:not(:last-child) {
   margin-right: 50px;
 }
+
 .navigation-list {
   margin-left: 93px;
 }
@@ -226,17 +230,20 @@ index main =====
 }
 
 .hero .container {
-  flex-direction: column;
+  /* flex-direction: column; */
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
-.hero-container > h1 {
-  justify-content: center;
+
+.hero .container > h1 {
+  /* justify-content: center; */
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 }
-.hero-container button {
+
+.hero .container button {
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
@@ -260,6 +267,7 @@ index main =====
 
 /*features*/
 .features-list {
+  display: flex;
   margin-left: calc(-1 * var(--list-gap));
 }
 
@@ -294,6 +302,7 @@ index main =====
 }
 
 .specialization-list {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -302,6 +311,7 @@ index main =====
 }
 
 .team-list {
+  display: flex;
   /*text-align: center;*/
   margin-left: calc(-1 * var(--list-gap));
 }
@@ -338,15 +348,18 @@ index main =====
 portfolio main =====
 */
 .exemples-container {
+  display: flex;
   flex-direction: column;
 }
 
 /*buttons*/
-.exemples-container .filter-buttons {
+.filter-buttons {
+  display: flex;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .filter-buttons > li:not(:last-child) {
   margin-right: 8px;
 }
@@ -374,6 +387,7 @@ portfolio main =====
 }
 
 .exemple-gallery {
+  display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--list-gap));
   margin-left: calc(-1 * var(--list-gap));
@@ -415,15 +429,7 @@ footer =====
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.contacts .container {
-  /*flex-direction: column;*/
-  align-items: baseline;
-  display: inline-block;
-  margin-left: 190px;
-  /*padding-left: 205px;*/
-}
 .contacts-list {
-  flex-direction: column;
   margin-top: 20px;
 }
 .contacts-list > li:not(:last-child) {
