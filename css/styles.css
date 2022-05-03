@@ -45,13 +45,8 @@ ul {
   margin: 0;
 }
 
-/* ul {
-  display: flex;
-} */
-
 img {
   display: block;
-  /*max-width: 100%;*/
   padding: 0;
   margin: 0;
 }
@@ -61,8 +56,6 @@ li {
 }
 
 .container {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -226,18 +219,15 @@ index main =====
   text-align: center;
   color: var(--white-color);
   width: 696px;
-  /*height: 120px;*/
 }
 
 .hero .container {
-  /* flex-direction: column; */
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
 }
 
 .hero .container > h1 {
-  /* justify-content: center; */
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -255,8 +245,6 @@ index main =====
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  /*width: 200px;*/
-  /*height: 50px;*/
   border-style: hidden;
   border-radius: 4px;
   color: var(--white-color);
@@ -272,7 +260,6 @@ index main =====
 }
 
 .features-list > li {
-  /*height: 101px;*/
   margin-left: var(--list-gap);
   flex-basis: calc(100% / 4 - 30px);
 }
@@ -312,7 +299,6 @@ index main =====
 
 .team-list {
   display: flex;
-  /*text-align: center;*/
   margin-left: calc(-1 * var(--list-gap));
 }
 .team-list > li {
@@ -398,7 +384,6 @@ portfolio main =====
   margin-left: var(--list-gap);
   margin-top: var(--list-gap);
   max-width: 370px;
-  /*height: 404px;*/
   background: var(--white-color);
   border: 1px solid var(--card-border-color);
   box-sizing: border-box;
