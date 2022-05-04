@@ -228,9 +228,9 @@ index main =====
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-image: var(--hero-gradient), url(./images/heronew.jpg);
+  background-image: var(--hero-gradient), url(../images/heronew.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;  
   background-size: cover;
 }
 .hero-title {
