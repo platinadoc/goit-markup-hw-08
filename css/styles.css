@@ -366,6 +366,7 @@ index main =====
   color: var(--main-gray-color);
 }
 .team-list-item-icon {
+  display: flex;
   justify-content: center;
 }
 .team-list-item-icon > li:not(:last-child) {
@@ -403,6 +404,8 @@ index main =====
 }
 .clients-list-item-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 90px;
   border: 1px solid var(--icon-color);
