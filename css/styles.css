@@ -557,14 +557,10 @@ footer =====
 
 .contacts-icon > p {
   margin-bottom: 20px;
-}
-/*font-weight: 700;
-  font-size: 14px;
-  line-height: 1.15;
+  text-transform: uppercase;
   letter-spacing: 0.03em;
-  text-decoration: uppercase;
-  color: var(--white-color);
-}*/
+}
+
 .icon-link,
 .icon-link .icon {
   display: block;
