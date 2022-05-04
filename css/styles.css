@@ -152,8 +152,10 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
-.contacts-header:hover .icon,
-.contacts-header:focus .icon {
+.contacts-header:hover .icon-enve,
+.contacts-header:focus .icon-enve,
+.contacts-header:hover .icon-phone,
+.contacts-header:hover .icon-phone {
   fill: currentColor;
 }
 
