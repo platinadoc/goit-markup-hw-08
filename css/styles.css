@@ -155,8 +155,7 @@ header .container {
 .contacts-header:hover .icon-enve,
 .contacts-header:focus .icon-enve,
 .contacts-header:hover .icon-phone,
-.contacts-header:focus .icon-phone
-.clients-list-icon-link:hover .icon-client,
+.contacts-header:focus .icon-phone .clients-list-icon-link:hover .icon-client,
 .clients-list-icon-link:focus .icon-client {
   fill: currentColor;
 }
@@ -221,8 +220,6 @@ header .logo {
 .icon {
   /*margin: 0 10px 0 0;*/
   color: var(--brand-color);
-  /*width: 100%;*/
-  /*height:100%;*/
   fill: var(--icon-color);
 }
 
@@ -240,7 +237,7 @@ index main =====
   margin-right: auto;
   background-image: var(--hero-gradient), url(../images/heronew.jpg);
   background-repeat: no-repeat;
-  background-position: center;  
+  background-position: center;
   background-size: cover;
 }
 .hero-title {
@@ -425,8 +422,6 @@ index main =====
 
 .icon-client {
   color: var(--icon-color);
-  /*width: 106px;*/
-  /*height: 60px;*/
   fill: currentColor;
 }
 
