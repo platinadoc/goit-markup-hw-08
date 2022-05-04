@@ -214,9 +214,9 @@ header .logo {
 .icon {
   /*margin: 0 10px 0 0;*/
   color: var(--brand-color);
-  width: 100%;
-  height:100%;
-  fill: currentColor;
+  /*width: 100%;*/
+  /*height:100%;*/
+  fill: var(--icon-color);
 }
 
 /*
