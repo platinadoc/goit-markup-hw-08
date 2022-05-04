@@ -155,7 +155,9 @@ header .container {
 .contacts-header:hover .icon-enve,
 .contacts-header:focus .icon-enve,
 .contacts-header:hover .icon-phone,
-.contacts-header:hover .icon-phone {
+.contacts-header:focus .icon-phone
+.features-section:hover .icon-client,
+.features-section:focus .icon-client {
   fill: currentColor;
 }
 
