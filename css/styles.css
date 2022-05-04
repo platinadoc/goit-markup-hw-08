@@ -172,7 +172,6 @@ header .container {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.15;
   letter-spacing: 0.02em;
 }
 
@@ -572,12 +571,6 @@ footer =====
   align-items: center;
   background-color: var(--footer-icons-color);
 }
-
-/*.cnt-icon {
-  width: 44px;
-  height: 44px;
-}*/
-
 .contacts-icon-list {
   display: flex;
   margin-left: 85px;
