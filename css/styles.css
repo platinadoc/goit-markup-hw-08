@@ -537,6 +537,7 @@ footer =====
 
 .contacts-list {
   margin-top: 20px;
+  margin-right: 878px;
 }
 .contacts-list > li:not(:last-child) {
   margin-bottom: 9px;
@@ -580,6 +581,13 @@ footer =====
 
 .contacts-icon-list {
   display: flex;
+  margin-left: 85px;
+  line-height: 1.15;
+}
+.begin {
+  margin-left: 85px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .contacts-icon-list > li:not(:last-child) {
