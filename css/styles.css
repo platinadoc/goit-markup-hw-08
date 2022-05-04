@@ -212,7 +212,10 @@ header .logo {
   outline-color: var(--brand-color);
 }
 .icon {
-  margin: 0 10px 0 0;
+  /*margin: 0 10px 0 0;*/
+  color: var(--brand-color);
+  width: 100%;
+  height:100%;
   fill: currentColor;
 }
 
@@ -414,8 +417,8 @@ index main =====
 
 .icon-client {
   color: var(--icon-color);
-  width: 100%;
-  height: 100%;
+  width: 106px;
+  height: 60px;
   fill: currentColor;
 }
 
