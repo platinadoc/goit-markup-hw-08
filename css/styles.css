@@ -381,6 +381,7 @@ index main =====
 .team-list-item-icon-link,
 .content .icon {
   display: block;
+  margin-top: 20px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -417,8 +418,8 @@ index main =====
 
 .icon-client {
   color: var(--icon-color);
-  width: 106px;
-  height: 60px;
+  /*width: 106px;*/
+  /*height: 60px;*/
   fill: currentColor;
 }
 
@@ -546,10 +547,10 @@ footer =====
   color: var(--brand-color);
 }
 
-/*contacts-icon*/
-/*.contacts-icon > p {
+.contacts-icon > p {
   margin-bottom: 20px;
-  font-weight: 700;
+}
+/*font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.03em;
