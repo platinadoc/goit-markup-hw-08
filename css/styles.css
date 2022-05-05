@@ -203,10 +203,6 @@ header .container {
   text-decoration: none;
   color: var(--main-gray-color);
 }
-.icon-enve
-.icon-phone {
-  color: var(--main-gray-color);
-}
 
 header .logo {
   padding-top: 24px;
@@ -223,8 +219,13 @@ header .logo {
 }
 .icon {
   /*margin: 0 10px 0 0;*/
+  display: block;
   color: var(--brand-color);
-  fill: var(--icon-color);
+  fill: var(--white-color);
+  background-color: var(--footer-icons-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 
 /*
@@ -559,16 +560,14 @@ footer =====
   letter-spacing: 0.03em;
 }
 
-.icon-link,
 .icon-link .icon {
   display: block;
-  width: 44px;
+  /*width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: var(--white-color);
   justify-content: center;
   align-items: center;
-  background-color: var(--footer-icons-color);
+  background-color: var(--footer-icons-color);*/
 }
 .contacts-icon-list {
   display: flex;
