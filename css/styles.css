@@ -152,19 +152,24 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
-.contacts-header:hover .icon-enve,
+/*.contacts-header:hover .icon-enve,
 .contacts-header:focus .icon-enve,
 .contacts-header:hover .icon-phone,
-.contacts-header:focus .icon-phone 
+.contacts-header:focus .icon-phone,
 .clients-list-icon-link:hover .icon-client,
 .clients-list-icon-link:focus .icon-client {
   fill: currentColor;
+}*/
+
+.contact:hover svg,
+.contact:focus svg {
+  fill: var(--brand-color);
 }
 
 header .icon-enve,
 header .icon-phone {
   margin: 0 10px 0 0;
-  fill: var(--main-gray-color); 
+  fill: var(--main-gray-color);
 }
 .navigation {
   display: flex;
