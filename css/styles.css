@@ -155,11 +155,17 @@ header .container {
 .contacts-header:hover .icon-enve,
 .contacts-header:focus .icon-enve,
 .contacts-header:hover .icon-phone,
-.contacts-header:focus .icon-phone .clients-list-icon-link:hover .icon-client,
+.contacts-header:focus .icon-phone 
+.clients-list-icon-link:hover .icon-client,
 .clients-list-icon-link:focus .icon-client {
   fill: currentColor;
 }
 
+.icon-enve
+.icon-phone {
+  margin: 0 10px 0 0;
+  fill: var(--main-gray-color); 
+}
 .navigation {
   display: flex;
   align-items: center;
