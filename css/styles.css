@@ -197,12 +197,14 @@ header .container {
   color: var(--main-color);
 }
 
-.contacts-header .contact 
-.icon-enve
-.icon-phone {
+.contacts-header .contact {
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
+  color: var(--main-gray-color);
+}
+.icon-enve
+.icon-phone {
   color: var(--main-gray-color);
 }
 
