@@ -197,7 +197,9 @@ header .container {
   color: var(--main-color);
 }
 
-.contacts-header .contact {
+.contacts-header .contact 
+.icon-enve
+.icon-phone {
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
