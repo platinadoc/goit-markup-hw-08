@@ -161,8 +161,8 @@ header .container {
   fill: currentColor;
 }
 
-.icon-enve,
-.icon-phone {
+header .icon-enve,
+header .icon-phone {
   margin: 0 10px 0 0;
   fill: var(--main-gray-color); 
 }
