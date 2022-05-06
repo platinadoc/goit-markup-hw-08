@@ -8,15 +8,20 @@
   --brand-color: #2196f3;
   --main-color: #212121; /* txt, hdr, btn */
   --main-gray-color: #757575; /* p */
-  --background-dark-color: #2f303a; /*hero, footer*/
-  --background-gray-color: #f5f4fa; /* team bg, button bg */
-  --white-color: #ffffff; /* main bg, active txt, logo ftr */
-  --black-color: #000000; /* logo hdr*/
+  --bgr-dark-color: #2f303a; /*hero, footer*/
+  --bgr-light-color: #ffffff; /*main bgr, cards bgr*/
+  --bgr-gray-color: #f5f4fa; /* team bgr, button bgr*/
+  --main-light-color: #ffffff; /* main bg, active txt, logo ftr */
+  --dark-color: #000000; /* logo hdr*/
   --card-border-color: #eeeeee;
   --icon-color: #afb1b8;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --footer-icons-color: rgba(255, 255, 255, 0.1);
   --header-border-color: #ececec;
+  --specialization-description-color: rgba(47, 48, 58, 0.8);
+  --overlay-card-color: rgba(33, 150, 243, 0.9);
+  --btn-modal-close: rgba(0, 0, 0, 0.1);
+  --modal-overlay-color: rgba(0, 0, 0, 0.2);
   --hero-gradient: linear-gradient(
     to bottom,
     rgba(47, 48, 58, 0.4),
@@ -33,7 +38,7 @@
   --list-gap: 30px;
 }
 body {
-  background-color: var(--white-color);
+  background-color: var(--bgr-light-color);
   color: var(--main-color);
   font-family: var(--main-font);
   font-style: normal;
@@ -65,6 +70,7 @@ li {
 }
 
 .container {
+  flex-wrap: wrap;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -96,10 +102,10 @@ li {
 }
 
 .logo-studio-white {
-  color: var(--white-color);
+  color: var(--main-light-color);
 }
 .logo-studio-black {
-  color: var(--black-color);
+  color: var(--dark-color);
 }
 .logo:focus {
   outline-color: var(--brand-color);
@@ -152,14 +158,6 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
-/*.contacts-header:hover .icon-enve,
-.contacts-header:focus .icon-enve,
-.contacts-header:hover .icon-phone,
-.contacts-header:focus .icon-phone,
-.clients-list-icon-link:hover .icon-client,
-.clients-list-icon-link:focus .icon-client {
-  fill: currentColor;
-}*/
 
 .contact:hover svg,
 .contact:focus svg {
@@ -202,10 +200,25 @@ header .icon-phone {
 }
 
 .navigation-list .link {
+  /*display: block;*/
   padding-top: 32px;
   padding-bottom: 32px;
+  position: relative;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
   color: var(--main-color);
+}
+
+.navigation-list .current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  bgr-color: var(--brand-color);
 }
 
 .contacts-header .contact {
@@ -229,9 +242,9 @@ header .logo {
   outline-color: var(--brand-color);
 }
 .icon {
-  /*margin: 0 10px 0 0;*/
-  fill: var(--white-color);
-  /*background-color: var(--footer-icons-color);
+  fill: var(--main-light-color);
+  /*margin: 0 10px 0 0;
+  background-color: var(--footer-icons-color);
   width: 44px;
   height: 44px;
   border-radius: 50%;*/
@@ -242,10 +255,10 @@ index main =====
 */
 
 .hero {
-  background-color: var(--background-dark-color);
+  background-color: var(--bgr-dark-color);
   width: 1600px;
   height: 600px;
-  padding: 200 px 0;
+  padding: 200px 0;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -261,7 +274,7 @@ index main =====
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--white-color);
+  color: var(--main-light-color);
   width: 696px;
 }
 
@@ -291,12 +304,67 @@ index main =====
   letter-spacing: 0.06em;
   border-style: hidden;
   border-radius: 4px;
-  color: var(--white-color);
+  color: var(--main-light-color);
   background-color: var(--brand-color);
   box-shadow: var(--hero-btn-shadow);
   cursor: pointer;
   padding: 10px 32px;
   margin: auto;
+}
+
+/*hero modal*/
+.backgroup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--modal-overlay-color);
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: var(--bgr-light-color);
+}
+.btn-modal-close {
+  position: absolute;
+  display: flex;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid var(--btn-modal-close);
+  background-color: var(--main-light-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: border-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-icon {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.btn-modal-close:hover,
+.btn-modal-close:focus {
+  border-color: var(--brand-color);
+  color: var(--brand-color);
 }
 
 /*features*/
@@ -316,7 +384,7 @@ index main =====
   height: 120px;
   align-items: center;
   justify-content: center;
-  background-color: var(--background-gray-color);
+  background-color: var(--bgr-gray-color);
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -346,12 +414,31 @@ index main =====
 }
 
 .specialization-list {
-  display: flex;
+  /*display: flex;*/
   justify-content: space-between;
 }
 
+.specialization-list > li {
+  position: relative;
+  margin-left: var(--list-gap);
+  flex-basis: calc(100% / 3);
+}
+
+.specialization-description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 27px 82px;
+  text-transform: uppercase;
+  line-height: 1.14;
+  text-align: center;
+  color: var(--main-light-color);
+  background-color: var(--specialization-description-color);
+}
+
 .team {
-  background-color: var(--background-gray-color);
+  background-color: var(--bgr-gray-color);
 }
 
 .team-list {
@@ -364,8 +451,9 @@ index main =====
   flex-basis: calc(100% / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: var(--box-shadow);
-  background: var(--white-color);
+  background: var(--main-light-color);
 }
+
 .team-list .content {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -403,15 +491,18 @@ index main =====
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--white-color);
-  fill: var(--icon-color);
+  background-color: var(--bgr-light-color);
+  color: var(--icon-color);
   justify-content: center;
   align-items: center;
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .team-list-item-icon-link:focus .icon,
 .team-list-item-icon-link:hover .icon {
   background-color: var(--brand-color);
-  fill: var(--white-color);
+  color: var(--main-light-color);
 }
 
 /*clients*/
@@ -430,8 +521,9 @@ index main =====
   align-items: center;
   width: 170px;
   height: 90px;
-  border: 1px solid var(--icon-color);
+  border: 1px solid currentColor; /*icon-color*/
   border-radius: 4px;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-client {
@@ -471,7 +563,7 @@ portfolio main =====
 .filter-buttons button {
   font-family: var(--main-font);
   color: var(--main-color);
-  background-color: var(--background-gray-color);
+  background-color: var(--bgr-gray-color);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -481,11 +573,16 @@ portfolio main =====
   border-radius: 4px;
   padding: 6px 22px;
   cursor: pointer;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.filter-btn.current,
 .filter-buttons button:hover,
 .filter-buttons button:focus,
 .filter-buttons button:active {
-  color: var(--white-color);
+  color: var(--main-light-color);
   background-color: var(--brand-color);
   box-shadow: var(--btn-shadow);
 }
@@ -502,18 +599,47 @@ portfolio main =====
   margin-left: var(--list-gap);
   margin-top: var(--list-gap);
   max-width: 370px;
-  background: var(--white-color);
+  background-color: var(--bgr-light-color);
   border: 1px solid var(--card-border-color);
   box-sizing: border-box;
 }
 .exemple-gallery .link {
+  position: relative;
   display: inline-block;
   padding: 0px;
   margin: 0px;
   text-decoration: none;
   color: var(--main-color);
   max-width: 370px;
+  transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.overlay-box {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.overlay-text {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  overflow: hidden;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--main-light-color);
+  background-color: var(--overlay-card-color);
+  transform: translateY(101%);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.exemple-gallery .link:hover .overlay-text,
+.exemple-gallery .link:focus .overlay-text {
+  transform: translateY(0%);
+}
+
 .exemple-gallery .link:hover,
 .exemple-gallery .link:focus {
   box-shadow: var(--portfolio-exemple-shadow);
@@ -529,12 +655,12 @@ portfolio main =====
 footer =====
 */
 .contacts {
-  color: var(--white-color);
+  color: var(--main-light-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  background-color: var(--background-dark-color);
+  background-color: var(--bgr-dark-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -557,7 +683,9 @@ footer =====
 
 .contacts-list .contact {
   color: var(--footer-contacts-color);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .contacts-list .contact:hover,
 .contacts-list .contact:focus {
   color: var(--brand-color);
@@ -578,7 +706,10 @@ footer =====
   align-items: center;
   color: var(--brand-color);
   background-color: var(--footer-icons-color);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .contacts-icon-list {
   display: flex;
   margin-left: 85px;
@@ -596,5 +727,5 @@ footer =====
 .icon-link:hover .icon,
 .icon-link:focus .icon {
   background-color: var(--brand-color);
-  fill: var(--white-color);
+  color: var(--main-light-color);
 }
