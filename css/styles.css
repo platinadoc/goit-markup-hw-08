@@ -560,7 +560,7 @@ portfolio main =====
 .button-order:hover,
 .button-order:focus {
   background-color: var(--main-light-color);
-  color: var(--icon-color);
+  color: var(--brand-color);
 }
 
 .filter-buttons > li:not(:last-child) {
