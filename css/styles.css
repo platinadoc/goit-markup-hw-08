@@ -429,8 +429,11 @@ index main =====
   bottom: 0;
   width: 100%;
   padding: 27px 82px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  line-height: 1.14;
   text-align: center;
   color: var(--main-light-color);
   background-color: var(--specialization-description-color);
