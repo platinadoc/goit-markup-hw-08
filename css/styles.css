@@ -627,11 +627,9 @@ portfolio main =====
   overflow: hidden;
 }
 
-/*.overlay-text p {
-  color: var(--main-light-color);
+p.overlay-text {
   font-size: 18px;
-  letter-spacing: 0.03em;
-}*/
+}
 
 .overlay-text {
   position: absolute;
