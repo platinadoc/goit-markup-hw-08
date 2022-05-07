@@ -312,7 +312,8 @@ index main =====
 }
 
 /*hero modal*/
-.backgroup {
+
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -362,7 +363,6 @@ index main =====
 
 .btn-modal-close:hover,
 .btn-modal-close:focus {
-  border-color: var(--brand-color);
   color: var(--brand-color);
 }
 
