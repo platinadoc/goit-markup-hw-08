@@ -422,6 +422,9 @@ index main =====
   margin-left: var(--list-gap);
   flex-basis: calc(100% / 3);
 }
+.specialization-list > li:first-child {
+  margin-left: 0;
+}
 
 .specification-description {
   position: absolute;
