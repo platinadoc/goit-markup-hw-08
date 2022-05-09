@@ -459,7 +459,12 @@
         <div>
           <form action="#" class="follow-form">
             <p>Подпишитесь на рассылку</p>
-            <input type="email" class="follow-form-input" name="user-mail" placeholder="E-mail">
+            <input
+              type="email"
+              class="follow-form-input"
+              name="user-mail"
+              placeholder="E-mail"
+            />
             <button type="submit" class="action-button">
               Подписаться
               <svg class="subscription" width="24" height="24">
@@ -481,56 +486,105 @@
         </button>
 
         <form class="submit-form">
-         <p class="submit-form-tittle">Оставьте свои данные, мы Вам перезвоним</p>
-         <div class="submit-form-element">
-           <label class="submit-form-element-label" for="username"> Имя </label>
-           <div class="input-wrapper">
-             <input class="submit-form-element-input element-decoration" type="text" name="username" id="username"/>
-             <svg class="submit-form-element-input-icon" width="18" height="18">
-               <use href="./images/symbol-des.svg#person-form"></use>
-             </svg>
-           </div>
-         </div>
-         
-         <div class="submit-form-element">
-           <label class="submit-form-element-label" for="tel"> Телефон </label>
-           <div class="input-wrapper">
-             <input class="submit-form-element-input element-decoration" type="tel" name="tel" id="tel"/>
-             <svg class="submit-form-element-input-icon" width="18" height="18">
-               <use href="./images/symbol-defs.svg#phone-form"></use>
-             </svg> 
-           </div> 
-         </div>
-
-         <div class="submit-form-element">
-           <label class="submit-form-element-label" for="email"> Почта </label>
-           <div class="input-wrapper">
-             <input class="submit-form-element-input element-decoration" type="email" name="email" id="email"/>
-             <svg class="submit-form-element-input-icon" width="18" height="18">
-               <use href="./images/symbol-defs.svg#email-form"></use>
-             </svg> 
-           </div> 
-         </div>
-
-         <div class="submit-form-element">
-           <label class="submit-form-element-label" for="comment"> Комментарий </label>
-           <textarea class="submit-form-textarea element-decoration" name="comment" id="comment" placeholder="Введите текст"></textarea>
-           </div>
-
-           <label class="subscription-form-element" for="agreement">
-             <input class="subscription-form-input" type="checkbox" name="agreement" id="agreement" value="approved"/>
-             <svg class="subscription-form-input-icon" width="16" height="15">
-               <use href="./images/symbol-defs.svg#check"></use>
-             </svg>
-             <span>Соглашаюсь с рассылкой и принимаю</span>
-             <a class="subscription-form-link" href="">Условия договора</a>
-           </label>
-            <button class="modal-submit-btn action-button" name="modal-submit-btn" type="submit">Отправить</button>
-            </form>
+          <p class="submit-form-title">
+            Оставьте свои данные, мы Вам перезвоним
+          </p>
+          <div class="submit-form-element">
+            <label class="submit-form-element-label" for="username">
+              Имя
+            </label>
+            <div class="input-wrapper">
+              <input
+                class="submit-form-element-input element-decoration"
+                type="text"
+                name="username"
+                id="username"
+              />
+              <svg
+                class="submit-form-element-input-icon"
+                width="18"
+                height="18"
+              >
+                <use href="./images/symbol-des.svg#person-form"></use>
+              </svg>
+            </div>
           </div>
-        </div>
+
+          <div class="submit-form-element">
+            <label class="submit-form-element-label" for="tel"> Телефон </label>
+            <div class="input-wrapper">
+              <input
+                class="submit-form-element-input element-decoration"
+                type="tel"
+                name="tel"
+                id="tel"
+              />
+              <svg
+                class="submit-form-element-input-icon"
+                width="18"
+                height="18"
+              >
+                <use href="./images/symbol-defs.svg#phone-form"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="submit-form-element">
+            <label class="submit-form-element-label" for="email"> Почта </label>
+            <div class="input-wrapper">
+              <input
+                class="submit-form-element-input element-decoration"
+                type="email"
+                name="email"
+                id="email"
+              />
+              <svg
+                class="submit-form-element-input-icon"
+                width="18"
+                height="18"
+              >
+                <use href="./images/symbol-defs.svg#email-form"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="submit-form-element">
+            <label class="submit-form-element-label" for="comment">
+              Комментарий
+            </label>
+            <textarea
+              class="submit-form-textarea element-decoration"
+              name="comment"
+              id="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+
+          <label class="subscription-form-element" for="agreement">
+            <input
+              class="subscription-form-input"
+              type="checkbox"
+              name="agreement"
+              id="agreement"
+              value="approved"
+            />
+            <svg class="subscription-form-input-icon" width="16" height="15">
+              <use href="./images/symbol-defs.svg#check"></use>
+            </svg>
+            <span>Соглашаюсь с рассылкой и принимаю</span>
+            <a class="subscription-form-link" href="">Условия договора</a>
+          </label>
+          <button
+            class="modal-submit-btn action-button"
+            name="modal-submit-btn"
+            type="submit"
+          >
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
 
     <script src="./js/modal.js"></script>
-    
   </body>
 </html>
