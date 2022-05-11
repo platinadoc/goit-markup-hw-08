@@ -1,0 +1,67 @@
+.specialization-container {
+    flex-direction: column;
+    padding-bottom: var(--big-padding);
+}
+
+.specialization-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.specialization-list>li {
+    position: relative;
+    margin-left: var(--list-gap);
+    flex-basis: calc(100% / 3);
+}
+
+.specialization-list>li:first-child {
+    margin-left: 0;
+}
+
+.specification-description {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 27px 82px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-light-color);
+    background-color: var(--specialization-description-color);
+}
+.subscription-form-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.subscription-form-input-icon {
+    fill: none;
+    margin-right: 7px;
+    border: 2px solid var(--main-color);
+    border-radius: 2px;
+    outline: none;
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription-form-input:checked+.subscription-form-input-icon {
+    background-color: var(--brand-color);
+    fill: var(--main-light-color);
+    border: none;
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription-form-input:focus-visible+.subscription-form-input-icon {
+    outline: solid 1pt;
+}

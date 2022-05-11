@@ -1,0 +1,37 @@
+:root {
+    --logo-font: "Raleway", sans-serif;
+    --main-font: "Roboto", sans-serif;
+    --brand-color: #2196f3;
+    --main-color: #212121;
+    --main-gray-color: #757575;
+    --bgr-dark-color: #2f303a;
+    --bgr-light-color: #ffffff;
+    --bgr-gray-color: #f5f4fa;
+    --main-light-color: #ffffff;
+    --dark-color: #000000;
+    --card-border-color: #eeeeee;
+    --icon-color: #afb1b8;
+    --accent-dark-color: #188ce8;
+    --footer-contacts-color: rgba(255, 255, 255, 0.6);
+    --footer-icons-color: rgba(255, 255, 255, 0.1);
+    --header-border-color: #ececec;
+    --specialization-description-color: rgba(47, 48, 58, 0.8);
+    --follow-form-input-border-color: rgba(255, 255, 255, 0.3);
+    --overlay-card-color: rgba(33, 150, 243, 0.9);
+    --btn-modal-close: rgba(0, 0, 0, 0.1);
+    --modal-overlay-color: rgba(0, 0, 0, 0.2);
+    --submit-form-textarea-color: rgba(117, 117, 117, 0.5);
+    --submit-element-decoration-color: rgba(33, 33, 33, 0.2);
+    --hero-gradient: linear-gradient(to bottom,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4));
+    --btn-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    --hero-btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    --portfolio-exemple-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    --big-padding: 94px;
+    --list-gap: 30px;
+}

@@ -1,0 +1,22 @@
+.logo {
+    font-family: var(--logo-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--brand-color);
+    text-decoration: none;
+}
+
+.logo-studio-white {
+    color: var(--main-light-color);
+}
+
+.logo-studio-black {
+    color: var(--dark-color);
+}
+
+.logo:focus {
+    outline-color: var(--brand-color);
+}

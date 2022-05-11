@@ -1,0 +1,30 @@
+.team-list-item-icon>li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-list-item-icon-link {
+    display: flex;
+    color: var(--icon-color);
+}
+
+.team-list-item-icon-link,
+.content .icon {
+    display: block;
+    margin-top: 20px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--bgr-light-color);
+    fill: currentColor;
+    /* var(--icon-color);*/
+    justify-content: center;
+    align-items: center;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-list-item-icon-link:focus .icon,
+.team-list-item-icon-link:hover .icon {
+    background-color: var(--brand-color);
+    color: var(--main-light-color);
+}
