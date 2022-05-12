@@ -527,37 +527,37 @@ header .icon-phone {
   align-items: baseline;
 }
 
-.contacts-list {
+.contacts__list {
   margin-top: 20px;
 }
 
-.contacts-list > li:not(:last-child) {
+.contacts__list > li:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.contacts-list .contact,
-.contacts-list address {
+.contacts__list .contact,
+.contacts__list address {
   font-style: normal;
   text-decoration: none;
 }
 
-.contacts-list .contact {
+.contacts__list .contact {
   color: var(--footer-contacts-color);
   transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-list .contact:hover,
-.contacts-list .contact:focus {
+.contacts__list .contact:hover,
+.contacts__list .contact:focus {
   color: var(--brand-color);
 }
 
-.contacts-icon > p {
+.contacts__icon > p {
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
 
-.icon-link .icon {
+.icon__link .contacts__link {
   display: block;
   width: 44px;
   height: 44px;
@@ -569,17 +569,16 @@ header .icon-phone {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-icon-list {
+.contacts-list__icon {
   display: flex;
-  /*margin-left: 85px;*/
   line-height: 1.15;
 }
 
-.contacts-item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 85px;
 }
 
-.contacts-item:last-child {
+.contacts__item:last-child {
   margin-left: auto;
 }
 
@@ -589,14 +588,17 @@ header .icon-phone {
   margin-bottom: 20px;
 }
 
-.contacts-icon-list > li:not(:last-child) {
+.contacts-list__icon > li:not(:last-child) {
   margin-right: 10px;
 }
 
-.icon-link:hover .icon,
-.icon-link:focus .icon {
+.icon__link .contacts__icon:hover,
+.icon__link .contacts__icon:focus {
   background-color: var(--brand-color);
   color: var(--main-light-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
 }
 
 .hero {
