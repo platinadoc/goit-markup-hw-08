@@ -24,7 +24,7 @@ header .icon-phone {
 }
 
 .navigation__list,
-.contactsheader {
+.navigation__contact {
     display: flex;
     font-style: normal;
     font-weight: 500;
@@ -33,7 +33,7 @@ header .icon-phone {
 }
 
 .navigation__list>li:not(:last-child),
-.contactsheader>li:not(:last-child) {
+.navigation__contact>li:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -42,13 +42,15 @@ header .icon-phone {
 }
 
 .navigation__list>li,
-.contactsheader>li {
+.navigation__contact>li {
     display: flex;
     margin-top: -32px;
     margin-bottom: -32px;
 }
 
 .navigation__link {
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     position: relative;
@@ -69,7 +71,7 @@ header .icon-phone {
     background-color: var(--brand-color);
 }
 
-.contactsheader .contact {
+.navigation__contact {
     padding-top: 32px;
     padding-bottom: 32px;
     text-decoration: none;
@@ -77,19 +79,18 @@ header .icon-phone {
     transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-header .logo {
+.navigation__logo {
     padding-top: 24px;
     padding-bottom: 24px;
 }
-.icon {
-    fill: var(--main-light-color);
+.navigation__icon {
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 .navigation .current,
-.navigation__list .link:focus,
-.navigation__list .link:hover,
-.contactsheader .contact:hover,
-.contactsheader .contact:focus {
+.navigation__link:focus,
+.navigation__link:hover {
     color: var(--brand-color);
     outline-color: var(--brand-color);
 }

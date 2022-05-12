@@ -12,7 +12,7 @@
     background-size: cover;
 }
 
-.hero-title {
+.hero__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.37;
@@ -23,18 +23,17 @@
     width: 696px;
 }
 
-.hero .container {
-    padding-bottom: 200px;
+.hero__container {
     text-align: center;
 }
 
-.hero .container>h1 {
+.hero__container>h1 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
 }
 
-.hero .container button {
+.hero__container button {
     padding: 10px 32px;
     margin-left: auto;
     margin-right: auto;

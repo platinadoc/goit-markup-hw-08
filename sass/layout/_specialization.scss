@@ -1,24 +1,24 @@
-.specialization-container {
+.specialization {
     flex-direction: column;
     padding-bottom: var(--big-padding);
 }
 
-.specialization-list {
+.specialization__list {
     display: flex;
     justify-content: space-between;
 }
 
-.specialization-list>li {
+.specialization__list>li {
     position: relative;
     margin-left: var(--list-gap);
     flex-basis: calc(100% / 3);
 }
 
-.specialization-list>li:first-child {
+.specialization__list>li:first-child {
     margin-left: 0;
 }
 
-.specification-description {
+.specification__description {
     position: absolute;
     left: 0;
     bottom: 0;
