@@ -3,6 +3,7 @@
     width: 100%;
     flex-direction: column;
     color: var(--main-color);
+    margin-bottom: 10px;
 }
 
 .submit__element {
@@ -88,17 +89,6 @@
     color: var(--submit-form-textarea-color);
 }
 
-.subscription {
-    display: flex;
-    // margin: 10px 0 30px 0;
-    align-items: center;
-    justify-content: center;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    cursor: pointer;
-}
-
 .subscription__link {
     margin-left: 5px;
     color: var(--brand-color);
@@ -127,6 +117,17 @@
 // .subscription__input:focus-visible+.subscription__icon {
 //     outline: solid 1pt;
 // }
+
+.subscription__element {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 30px 0;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    cursor: pointer;
+}
 
 .modalbtn {
     margin: auto;
