@@ -5,7 +5,7 @@
     margin-right: auto;
 }
 
-.filter__buttons>li:not(:last-child) {
+.filter__buttons > li:not(:last-child) {
     margin-right: 8px;
 }
 
@@ -34,9 +34,5 @@
     color: var(--main-light-color);
     background-color: var(--brand-color);
     box-shadow: var(--btn-shadow);
-}
-.button__order:hover,
-.button__order:focus {
-    background-color: var(--main-light-color);
-    color: var(--brand-color);
+
 }

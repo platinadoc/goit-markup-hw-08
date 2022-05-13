@@ -129,6 +129,11 @@
     cursor: pointer;
 }
 
+.subscription {
+    margin-left: 10px;
+    fill: var(--main-light-color);
+    background-image: url(./images/symbol-defs.svg#send-btn);
+}
 .modalbtn {
     margin: auto;
 }

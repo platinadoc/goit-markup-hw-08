@@ -38,7 +38,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-.button-order {
+.button__order {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -52,4 +52,9 @@
     cursor: pointer;
     padding: 10px 32px;
     margin: auto;
+}
+.button__order:hover,
+.button__order:focus {
+    background-color: var(--main-light-color);
+    color: var(--brand-color);
 }

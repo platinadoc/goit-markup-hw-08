@@ -137,8 +137,7 @@ li {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.action__button:hover,
-.action__button:focus {
+.action__button:hover, .action__button:focus {
   background-color: var(--accent-dark-color);
 }
 
@@ -177,12 +176,6 @@ li {
 .follow-form__input:focus {
   outline: var(--brand-color);
   border: 1px solid var(--brand-color);
-}
-
-.subscription {
-  margin-left: 10px;
-  fill: var(--main-light-color);
-  background-image: url(./images/symbol-defs.svg#send-btn);
 }
 
 .backdrop {
@@ -366,6 +359,12 @@ li {
   cursor: pointer;
 }
 
+.subscription {
+  margin-left: 10px;
+  fill: var(--main-light-color);
+  background-image: url(./images/symbol-defs.svg#send-btn);
+}
+
 .modalbtn {
   margin: auto;
 }
@@ -404,12 +403,6 @@ li {
   color: var(--main-light-color);
   background-color: var(--brand-color);
   box-shadow: var(--btn-shadow);
-}
-
-.button__order:hover,
-.button__order:focus {
-  background-color: var(--main-light-color);
-  color: var(--brand-color);
 }
 
 header {
@@ -654,7 +647,7 @@ header .icon-phone {
   margin-right: auto;
 }
 
-.button-order {
+.button__order {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -668,6 +661,12 @@ header .icon-phone {
   cursor: pointer;
   padding: 10px 32px;
   margin: auto;
+}
+
+.button__order:hover,
+.button__order:focus {
+  background-color: var(--main-light-color);
+  color: var(--brand-color);
 }
 
 .features {
