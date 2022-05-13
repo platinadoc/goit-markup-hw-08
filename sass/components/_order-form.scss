@@ -1,15 +1,15 @@
-.submit-form {
+.submit {
     display: flex;
     width: 100%;
     flex-direction: column;
     color: var(--main-color);
 }
 
-.submit-form-element {
+.submit__element {
     margin-bottom: 10px;
 }
 
-.submit-form-title {
+.submit__title {
     justify-content: center;
     margin-bottom: 12px;
     font-weight: 700;
@@ -18,7 +18,7 @@
     letter-spacing: 0.03em;
 }
 
-.submit-form-element-label {
+.submit__label {
     display: block;
     margin-bottom: 4px;
     font-weight: 400;
@@ -32,7 +32,7 @@
     position: relative;
 }
 
-.element-decoration {
+.submit--decoration {
     display: block;
     width: 100%;
     border: 1px solid var(--submit-element-decoration-color);
@@ -40,39 +40,47 @@
     transition: border 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.element-decoration:focus {
+.submit--decoration:focus {
     border: 1px solid var(--brand-color);
     outline: none;
 }
 
-.submit-form-element-input {
+.submit__input {
     min-height: 40px;
     padding-left: 42px;
 }
 
-.submit-form-element-input-icon {
+.submit__icon {
     position: absolute;
     top: 11px;
     left: 12px;
     fill: currentColor;
 }
 
-.submit-form-element-input+.submit-form-element-input-icon {
+.submit__input+.submit__icon {
     color: var(--main-color);
     transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.submit-form-element-input:focus+.submit-form-element-input-icon {
+.submit__input:focus+.submit__icon {
     color: var(--brand-color);
 }
 
-.submit-form-textarea {
+.submit__textarea {
     height: 120px;
     padding: 12px 16px;
     resize: none;
 }
+.subscription__icon {
+    fill: none;
+    margin-right: 7px;
+    border: 2px solid var(--main-color);
+    border-radius: 2px;
+    outline: none;
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.submit-form-textarea::placeholder {
+.submit__textarea::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -80,9 +88,9 @@
     color: var(--submit-form-textarea-color);
 }
 
-.subscription-form-element {
+.subscription {
     display: flex;
-    margin: 10px 0 30px 0;
+    // margin: 10px 0 30px 0;
     align-items: center;
     justify-content: center;
     font-weight: 400;
@@ -91,10 +99,35 @@
     cursor: pointer;
 }
 
-.subscription-form-link {
+.subscription__link {
     margin-left: 5px;
     color: var(--brand-color);
+    
 }
-.modal-submit-btn {
+.subscription__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.subscription__input:checked+.subscription__icon {
+    background-color: var(--brand-color);
+    fill: var(--main-light-color);
+    border: none;
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// .subscription__input:focus-visible+.subscription__icon {
+//     outline: solid 1pt;
+// }
+
+.modalbtn {
     margin: auto;
 }

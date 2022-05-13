@@ -13,41 +13,43 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <header>
       <div class="container">
         <nav class="navigation">
-          <a class="logo" href="./index.html" lang="en"
+          <a class="navigation__logo logo" href="./index.html" lang="en"
             >Web<span class="logo-studio-black">Studio</span></a
           >
-          <ul class="navigation-list">
+          <ul class="navigation__list">
             <li>
-              <a href="./index.html" class="link">Студия</a>
+              <a href="./index.html" class="navigation__link">Студия</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="link current">Портфолио</a>
+              <a href="./portfolio.html" class="navigation__link current"
+                >Портфолио</a
+              >
             </li>
             <li>
-              <a href="#contacts" class="link">Контакты</a>
+              <a href="#contacts" class="navigation__link">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <ul class="contacts-header">
+        <ul class="navigation__contact">
           <li>
-            <a class="contact" href="mailto:info@devstudio.com">
-              <svg class="icon icon-enve" width="16" height="12">
+            <a class="navigation__link" href="mailto:info@devstudio.com">
+              <svg class="navigation__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li>
-            <a class="contact" href="tel:+380961111111">
-              <svg class="icon icon-phone" width="10" height="16">
+            <a class="navigation__link" href="tel:+380961111111">
+              <svg class="navigation__icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -60,16 +62,16 @@
     <main>
       <section class="exemples section">
         <div class="exemples-container container">
-          <h1 class="hidden-title">Наши работы</h1>
-          <ul class="filter-buttons">
-            <li><button class="filter-btn">Все</button></li>
-            <li><button class="filter-btn">Веб-сайты</button></li>
-            <li><button class="filter-btn">Приложения</button></li>
-            <li><button class="filter-btn">Дизайн</button></li>
-            <li><button class="filter-btn">Маркетинг</button></li>
+          <h1 class="hidden">Наши работы</h1>
+          <ul class="filter__buttons">
+            <li><button class="filter__btn">Все</button></li>
+            <li><button class="filter__btn">Веб-сайты</button></li>
+            <li><button class="filter__btn">Приложения</button></li>
+            <li><button class="filter__btn">Дизайн</button></li>
+            <li><button class="filter__btn">Маркетинг</button></li>
           </ul>
 
-          <h2 class="hidden-title">Примеры работ</h2>
+          <h2 class="hidden">Примеры работ</h2>
 
           <ul class="exemple-gallery">
             <li>
@@ -270,11 +272,11 @@
 
     <footer class="contacts" id="contacts">
       <div class="container">
-        <div class="contacts-item">
+        <div class="contacts__item">
           <a class="logo" href="./index.html" lang="en"
             >Web<span class="logo-studio-white">Studio</span></a
           >
-          <ul class="contacts-list">
+          <ul class="contacts__list" id="contacts">
             <li>
               <address>г. Киев, пр-т Леси Украинки, 26</address>
             </li>
@@ -288,49 +290,49 @@
             </li>
           </ul>
         </div>
-        <div class="contacts-item">
+        <div class="contacts__item">
           <p class="begin">Присоединяйтесь</p>
-          <ul class="contacts-icon-list">
+          <ul class="contacts-list__icon">
             <li>
-              <a class="icon-link" href="">
-                <svg class="icon" width="20" height="20">
+              <a class="icon__link" href="">
+                <svg class="contacts__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="icon-link" href="">
-                <svg class="icon" width="20" height="20">
+              <a class="icon__link" href="">
+                <svg class="contacts__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="icon-link" href="">
-                <svg class="icon" width="20" height="20">
+              <a class="icon__link" href="">
+                <svg class="contacts__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="icon-link" href="">
-                <svg class="icon" width="20" height="20">
+              <a class="icon__link" href="">
+                <svg class="contacts__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="contacts-item">
+        <div class="contacts__item">
           <form action="#" class="follow-form">
             <p class="begin">Подпишитесь на рассылку</p>
             <input
               type="email"
-              class="follow-form-input"
+              class="follow-form__input"
               name="user-mail"
               placeholder="E-mail"
             />
-            <button type="submit" class="action-button">
+            <button type="submit" class="action__button">
               Подписаться
               <svg class="subscription" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-send-btn"></use>
