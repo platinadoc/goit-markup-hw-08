@@ -21,10 +21,9 @@ header .icon-phone {
 .navigation {
     display: flex;
     align-items: center;
-}
 
-.navigation__list,
-.navigation__contact {
+&__list,
+&__contact {
     display: flex;
     font-style: normal;
     font-weight: 500;
@@ -32,34 +31,23 @@ header .icon-phone {
     letter-spacing: 0.02em;
 }
 
-.navigation__list>li:not(:last-child),
-.navigation__contact>li:not(:last-child) {
+&__list>li:not(:last-child),
+&__contact>li:not(:last-child) {
     margin-right: 50px;
 }
 
-.navigation__list {
+&__list {
     margin-left: 93px;
 }
 
-.navigation__list>li,
-.navigation__contact>li {
+&__list>li,
+&__contact>li {
     display: flex;
     margin-top: -32px;
     margin-bottom: -32px;
 }
 
-.navigation__link {
-    display: flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    position: relative;
-    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
-    text-decoration: none;
-    color: var(--main-color);
-}
-
-.navigation__list .current::after {
+&__list .current::after {
     content: "";
     position: absolute;
     left: 0;
@@ -71,29 +59,40 @@ header .icon-phone {
     background-color: var(--brand-color);
 }
 
-.navigation__contact {
+&__contact {
     padding-top: 32px;
     padding-bottom: 32px;
     text-decoration: none;
     color: var(--main-gray-color);
     transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation__contact .navigation__link {
+&__contact &__link {
     color: var(--main-gray-color);
 }
 
-.navigation__logo {
+&__logo {
     padding-top: 24px;
     padding-bottom: 24px;
 }
-.navigation__icon {
+&__icon {
     margin-right: 10px;
     fill: currentColor;
 }
 
+&__link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    color: var(--main-color);
+}
 .navigation .current,
-.navigation__link:focus,
-.navigation__link:hover {
+&__link:focus,
+&__link:hover {
     color: var(--brand-color);
     outline-color: var(--brand-color);
+}
 }

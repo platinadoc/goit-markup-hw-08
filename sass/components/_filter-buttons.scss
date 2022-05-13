@@ -3,13 +3,13 @@
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
-}
 
-.filter__buttons > li:not(:last-child) {
+
+& > li:not(:last-child) {
     margin-right: 8px;
 }
 
-.filter__buttons button {
+& button {
     font-family: var(--main-font);
     color: var(--main-color);
     background-color: var(--bgr-gray-color);
@@ -28,11 +28,11 @@
 }
 
 .filter__btn.current,
-.filter__buttons button:hover,
-.filter__buttons button:focus,
-.filter__buttons button:active {
+& button:hover,
+& button:focus,
+& button:active {
     color: var(--main-light-color);
     background-color: var(--brand-color);
     box-shadow: var(--btn-shadow);
-
+}
 }

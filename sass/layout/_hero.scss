@@ -52,9 +52,10 @@
     cursor: pointer;
     padding: 10px 32px;
     margin: auto;
-}
-.button__order:hover,
-.button__order:focus {
+
+&:hover,
+&:focus {
     background-color: var(--main-light-color);
     color: var(--brand-color);
+}
 }

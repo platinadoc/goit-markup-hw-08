@@ -12,20 +12,15 @@
     filter: drop-shadow(var(--action-btn-shadow));
     border-radius: 4px;
     transition: border 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.follow-form__input::placeholder {
+
+&::placeholder {
     font-size: 16px;
     letter-spacing: 0.03em;
     color: var(--footer-contacts-color);
 }
 
-.follow-form__input:focus {
+&:focus {
     outline: var(--brand-color);
     border: 1px solid var(--brand-color);
 }
-
-// .subscription {
-//     margin-left: 10px;
-//     fill: var(--main-light-color);
-//     background-image: url(./images/symbol-defs.svg#send-btn);
-// }
+}
