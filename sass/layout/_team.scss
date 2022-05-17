@@ -55,13 +55,31 @@
     color: var(--icon-color);
 }
 .teambox__item {
-    width: auto;
+    width: 100%;
+    margin-top: var(--list-gap);
     margin-left: var(--list-gap);
-    flex-basis: calc(100% / 4);
+    // flex-basis: calc(100% / 4);
+
+    @media screen and (min-width: 480px) {
+        max-width: 450px;
+        flex-basis: calc(100% / 1);
+    }
+    
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+        flex-basis: calc(100% / 2);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+        flex-basis: calc(100% / 4);
+    }
+    
     border-radius: 0px 0px 4px 4px;
     box-shadow: var(--box-shadow);
     background: var(--main-light-color);
 }
+
 
 .teamcontent {
     padding-top: 30px;

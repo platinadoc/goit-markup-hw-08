@@ -10,6 +10,39 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (min-width: 480px),
+      (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: var(--hero-gradient),
+      url(../images/hero/2x/heronew_smartphone@2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image:var(--hero-gradient),
+      url(../images/hero/1x/heronew_tablet@1x.jpg);
+    }  
+
+    @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+      screen and (min-width: 768px) and (min-resolution: 192dpi),
+      screen and (min-width: 768px) and (min-resolution: 2dppx) {
+      background-image: var(--hero-gradient),
+     url(../images/hero/2x/heronew_tablet@2x.jpg);
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 200px 0;
+      background-image: var(--hero-gradient),
+      url(../images/hero/1x/heronew_dektop@1x.jpg);
+    }
+        
+    @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+      screen and (min-width: 1200px) and (min-resolution: 192dpi),
+      screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+      background-image: var(--hero-gradient),
+      url(../images/hero/2x/heronew_dektop@2x.jpg);
+    }
 }
 
 .hero__title {
@@ -21,6 +54,12 @@
     text-align: center;
     color: var(--main-light-color);
     width: 696px;
+
+    @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.37;
+  }
 }
 
 .hero__container {

@@ -5,6 +5,21 @@
 .features__list {
     display: flex;
     margin-left: calc(-1 * var(--list-gap));
+
+   @media screen and (min-width: 480px) {
+       max-width: 450px;
+       flex-basis: calc(100% / 1);
+   }
+ 
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+        flex-basis: calc(100% / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+        flex-basis: calc(100% / 4);
+    }
 }
 
 .features__list>li {
@@ -23,7 +38,7 @@
 }
 
 .features__text {
-    width: 270px;
+    // width: 270px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;

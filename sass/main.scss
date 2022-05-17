@@ -1,6 +1,7 @@
 @import './base/common';
 @import './base/container';
 @import './base/section';
+@import './base/gallery';
 
 @import './utils/variables';
 @import './utils/visually-hidden';
@@ -15,6 +16,8 @@
 @import './components/modal-frame';
 @import './components/order-form';
 @import './components/filter-buttons';
+@import './components/mobile-menu-btn';
+@import './components/mobile-menu';
 
 @import './layout/header';
 @import './layout/footer';
