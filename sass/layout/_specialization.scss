@@ -1,26 +1,22 @@
 .specialization {
-    flex-direction: column;
-    padding-bottom: var(--big-padding);
 
-    @media screen and (max-width: 1199px) {
-        display: none;
-    }
+ @media (max-width:1199px) {
+     display: none;
+     
+ }
 }
 
 .specialization__list {
-    display: flex;
-    justify-content: space-between;
+    --list-item:3;
+ 
 }
 
-.specialization__list>li {
+.specialization__item {
     position: relative;
-    margin-left: var(--list-gap);
-    flex-basis: calc(100% / 3);
+ 
 }
 
-.specialization__list>li:first-child {
-    margin-left: 0;
-}
+
 
 .specification__description {
     position: absolute;

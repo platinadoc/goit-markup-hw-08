@@ -33,17 +33,26 @@ header .icon-phone {
 }
 
 .navigation {
+ display: none;
+@media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
+    }
 
 &__list,
 &__contact {
-    display: flex;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
+   
+    display: none;
+    
+        @media screen and (min-width: 768px) {
+            
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                letter-spacing: 0.02em; display: flex;
+             }
 }
+
 
 &__list>li:not(:last-child),
 &__contact>li:not(:last-child) {
