@@ -1246,7 +1246,7 @@ header .icon-phone {
   text-transform: uppercase;
   text-align: center;
   color: var(--main-light-color);
-  background-color: var(--specialization-description-color);
+  background-color: var(--specification-description-color);
 }
 
 .team {
