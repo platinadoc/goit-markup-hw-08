@@ -6,7 +6,7 @@
     justify-content: center;
     width: 100vw;
     min-width: 240px;
-    height: 100vh;
+    // height: 100vh;
     padding: 48px 0;
     z-index: 2;
     opacity: 0;
@@ -15,7 +15,7 @@
     overflow: auto;
 
     @media screen and (max-width: 768px) {
-        background-color: var(--bg-light-color);
+        background-color: var(--bgr-light-color);
         transition: opacity var(--main-animation), visibility var(--main-animation);
 
         &.is-open {
@@ -65,7 +65,7 @@
         &.current,
         &:hover,
         &:focus {
-            color: var(--accent-color);
+            color: var(--brand-color);
         }
     }
 }

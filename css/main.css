@@ -581,10 +581,9 @@ li {
   display: inline-flex;
   padding: 8px;
   margin: 0px;
-  width: 40px;
   height: 40px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   border: none;
   color: var(--main-color);
   background-color: transparent;
@@ -645,7 +644,6 @@ li {
   justify-content: center;
   width: 100vw;
   min-width: 240px;
-  height: 100vh;
   padding: 48px 0;
   z-index: 2;
   opacity: 0;
@@ -656,7 +654,7 @@ li {
 
 @media screen and (max-width: 768px) {
   .mobile-menu {
-    background-color: var(--bg-light-color);
+    background-color: var(--bgr-light-color);
     transition: opacity var(--main-animation), visibility var(--main-animation);
   }
   .mobile-menu.is-open {
@@ -711,7 +709,7 @@ li {
 }
 
 .mobile-menu-navigation__link.current, .mobile-menu-navigation__link:hover, .mobile-menu-navigation__link:focus {
-  color: var(--accent-color);
+  color: var(--brand-color);
 }
 
 .mobile-menu-contacts {
@@ -810,6 +808,7 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 60px;
 }
 
 .contact:hover svg,
