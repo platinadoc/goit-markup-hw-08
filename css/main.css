@@ -162,6 +162,8 @@ li {
   letter-spacing: 0.03em;
   color: var(--brand-color);
   text-decoration: none;
+  text-align: center;
+  display: block;
 }
 
 @media screen and (min-width: 1200px) {
@@ -184,6 +186,7 @@ li {
 }
 
 .action__button {
+  margin-top: 20px;
   display: inline-flex;
   width: 200px;
   height: 50px;
@@ -953,20 +956,13 @@ header .icon-phone {
   background-color: var(--bgr-dark-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
 }
 
 .contacts .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-@media screen and (min-width: 481px) {
-  .contacts .container {
-    align-items: baseline;
-    flex-direction: row;
-    justify-content: space-around;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -979,16 +975,19 @@ header .icon-phone {
 
 .contacts__list {
   margin-top: 20px;
+  padding-bottom: 60px;
 }
 
 .contacts__list > li:not(:last-child) {
   margin-bottom: 9px;
+  text-align: center;
 }
 
 .contacts__list .contact,
 .contacts__list address {
   font-style: normal;
   text-decoration: none;
+  text-align: center;
 }
 
 .contacts__list .contact {
@@ -1011,14 +1010,6 @@ header .icon-phone {
   .contacts__icon > p {
     text-align: start;
   }
-}
-
-.contacts__item:not(:last-child) {
-  margin-right: 85px;
-}
-
-.contacts__item:last-child {
-  margin-left: auto;
 }
 
 .contacts__icon {
@@ -1050,6 +1041,8 @@ header .icon-phone {
 
 .contacts-list__icon {
   display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
   line-height: 1.15;
   border-radius: 50%;
 }
@@ -1385,7 +1378,7 @@ header .icon-phone {
 .exemple-gallery {
   display: flex;
   margin-top: var(--list-gap);
-  margin-left: var(--list-gap);
+  margin-left: 0;
 }
 
 @media screen and (min-width: 480px) {
@@ -1428,13 +1421,9 @@ header .icon-phone {
 }
 
 .exemple-gallery > li {
-  flex-basis: calc(100% / 3);
-  margin-left: var(--list-gap);
   margin-top: var(--list-gap);
-  max-width: 370px;
   background-color: var(--bgr-light-color);
   border: 1px solid var(--card-border-color);
-  box-sizing: border-box;
 }
 
 .exemple-gallery .link {

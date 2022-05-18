@@ -7,6 +7,7 @@
     background-color: var(--bgr-dark-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
 
 & .container {
     display: flex;
@@ -14,11 +15,11 @@
     justify-content: center;
     // align-items: baseline;
 
-    @media screen and (min-width: 481px) {
-        align-items: baseline;
-        flex-direction: row;
-        justify-content: space-around;
-    }
+    // @media screen and (min-width: 480px) {
+    //     align-items: baseline;
+    //     flex-direction: row;
+    //     justify-content: space-around;
+    // }
 
     @media screen and (min-width: 1200px) {
         align-items: baseline;
@@ -29,16 +30,19 @@
 
 &__list {
     margin-top: 20px;
+    padding-bottom: 60px;
 }
 
 &__list>li:not(:last-child) {
     margin-bottom: 9px;
+    text-align: center;
 }
 
 &__list .contact,
 &__list address {
     font-style: normal;
     text-decoration: none;
+    text-align: center;
 }
 
 &__list .contact {
@@ -61,13 +65,13 @@
     }
 }    
 
-&__item:not(:last-child) {
-    margin-right: 85px;
-}
+// &__item:not(:last-child) {
+//     margin-right: 85px;
+// }
 
-&__item:last-child {
-    margin-left: auto;
-}
+// &__item:last-child {
+//     // margin-left: auto;
+// }
 &__icon {
     fill: var(--main-light-color);
     transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -100,6 +104,8 @@
 }
 .contacts-list__icon {
     display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
     line-height: 1.15;
     border-radius: 50%
 }
