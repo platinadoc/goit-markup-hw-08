@@ -638,7 +638,7 @@ li {
 
 .mobile-menu {
   display: flex;
-  position: absolute;
+  position: fixed;
   left: 0px;
   top: 0px;
   justify-content: center;
