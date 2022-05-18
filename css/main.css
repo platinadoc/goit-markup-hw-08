@@ -838,10 +838,6 @@ header .icon-phone {
   }
 }
 
-.navigation {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
   .navigation {
     display: flex;
@@ -1080,7 +1076,7 @@ header .icon-phone {
   background-size: cover;
 }
 
-@media screen and (min-width: 480px), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) {
   .hero {
     background-image: var(--hero-gradient), url(../images/hero/herotel2x.jpg);
   }
