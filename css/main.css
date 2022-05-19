@@ -1392,6 +1392,12 @@ header .icon-phone {
   margin: -15px;
 }
 
+.exemple-gallery > li {
+  margin-top: var(--list-gap);
+  background-color: var(--bgr-light-color);
+  border: 1px solid var(--card-border-color);
+}
+
 @media screen and (max-width: 767px) {
   .exemple-gallery > li:not(:first-child) {
     margin-top: 10px;
@@ -1429,20 +1435,15 @@ header .icon-phone {
   letter-spacing: 0.03em;
 }
 
-.exemple-gallery > li > li {
-  margin-top: var(--list-gap);
-  background-color: var(--bgr-light-color);
-  border: 1px solid var(--card-border-color);
-}
-
 .exemple-gallery > li .link {
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 0px;
   margin: 0px;
   text-decoration: none;
   color: var(--main-color);
-  max-width: 370px;
   transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1460,11 +1461,11 @@ header .icon-phone {
   padding: 20px 24px;
   border: 1px solid var(--card-border-color);
   border-top: 0;
+  flex-grow: 1;
 }
 
 .overlay-box {
   position: relative;
-  height: 100%;
   overflow: hidden;
 }
 
