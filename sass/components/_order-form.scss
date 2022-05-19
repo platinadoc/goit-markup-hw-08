@@ -1,3 +1,11 @@
+input {
+  outline: none;
+  &:hover,
+  &:focus {
+      border-color: var(--brand-color);
+  } 
+}
+
 .submit {
     // width: 100%;
     display: flex;
@@ -57,6 +65,11 @@
     height: 120px;
     padding: 12px 16px;
     resize: none;
+    outline: none;
+    &:hover,
+    &:focus {
+       border-color: var(--brand-color);
+}
 }
 
 .submit__textarea::placeholder {
@@ -72,23 +85,34 @@
     display: flex;
     align-items: center;
     margin: 10px 0 30px 0;
-    justify-content: center;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    cursor: pointer;
+    // justify-content: center;
+    // font-weight: 400;
+    // font-size: 12px;
+    // line-height: 1.17;
+     cursor: pointer;
 
-    @media screen and (min-width: 1200px) {
-        font-size: 14px;
-        line-height: 1.71;
-    }
+    // @media screen and (min-width: 1200px) {
+    //     font-size: 14px;
+    //     line-height: 1.71;
+    // }
 
-    .subscription__label {
+    // .subscription__label {
+    //     display: flex;
+    //     justify-content: center;
+    //     text-align: center;
+    // }
+    .subscription__police {
         display: flex;
-        justify-content: center;
-        text-align: center;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        
+       @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }
     }
-    
+
     .subscription__link {
         // margin-left: 5px;
         display: block;

@@ -5,23 +5,25 @@
 
 .exemple-gallery {
     display: flex;
-    // flex-wrap: wrap;
-    margin-top: var(--list-gap);
-    margin-left: 0;
+    flex-direction: wrap;
+    margin: -15px;
+}
+
+.exemple-gallery>li {
   
-   @media screen and (min-width: 480px) {
-       max-width: 450px;
-       flex-basis: calc(100% / 1);
+   @media screen and (max-width: 767px) {
+    &:not(:first-child) {
+    margin-top: 10px;
+}
    }
 
     @media screen and (min-width: 768px) {
-        max-width: 354px;
-        flex-basis: calc(100% / 2);
+        margin: 15px;
+        flex-basis: calc(100% / 2 - 30px);
     }
     
     @media screen and (min-width: 1200px) {
-        max-width: 370px;
-        flex-basis: calc(100% / 3);
+        flex-basis: calc(100% / 3 - 30px);
     }
 
 & h3 {
