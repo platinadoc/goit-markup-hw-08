@@ -3,11 +3,11 @@
     flex-direction: column;
 }
 
-.exemple-gallery {
-    display: flex;
-    flex-direction: wrap;
-    margin: -15px;
-}
+// .exemple-gallery {
+//     display: flex;
+//     // flex-direction: wrap;
+//     margin: -15px;
+// }
 
 .exemple-gallery>li {
     margin-top: var(--list-gap);
@@ -48,8 +48,8 @@
     letter-spacing: 0.03em;
 }
 
-&>li {
-}
+// &>li {
+// }
 
 & .link {
     position: relative;

@@ -1074,7 +1074,7 @@ header .icon-phone {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background-image: var(--hero-gradient), url(../images/hero/herotel2x.jpg);
+  background-image: var(--hero-gradient), url(../images/hero/herotel1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1384,12 +1384,6 @@ header .icon-phone {
 .exemples-container {
   display: flex;
   flex-direction: column;
-}
-
-.exemple-gallery {
-  display: flex;
-  flex-direction: wrap;
-  margin: -15px;
 }
 
 .exemple-gallery > li {
