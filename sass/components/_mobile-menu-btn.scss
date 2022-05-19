@@ -1,20 +1,34 @@
 .mobile-menu-button {
     display: inline-flex;
-    padding: 8px;
+
     margin: 0px;
     // width: 40px;
     height: 40px;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     border: none;
     color: var(--main-color);
     background-color: transparent;
     transition: color var(--main-animation);
     cursor: pointer;
 
+
+    &.is-open {
+
+
+        position: fixed;
+        z-index: 3;
+        right: 25px;
+        top: 22px;
+    }
+
     &:hover,
     &:focus {
         color: var(--accent-color);
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
     }
 
     &-icon {
@@ -43,18 +57,5 @@
     & .mobile-menu__icon-burger {
         opacity: 0;
         visibility: hidden;
-    }
-}
-
-/*header*/
-.mobile-menu-button {
-    display: flex;
-    position: absolute;
-    z-index: 3;
-    right: 25px;
-    top: 22px;
-
-    @media screen and (min-width: 768px) {
-        display: none;
     }
 }
