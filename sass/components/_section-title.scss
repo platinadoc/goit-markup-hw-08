@@ -1,15 +1,15 @@
 .title {
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.17;
-    text-align: center;
-    justify-content: center;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  justify-content: center;
 
   @media screen and (min-width: 1200px) {
-      font-size: 36px;
-      line-height: 1.16;
+    font-size: 36px;
+    line-height: 1.16;
   }
 }

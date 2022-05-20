@@ -1,61 +1,52 @@
 .hero {
-    background-color: var(--bgr-dark-color);
-    
-   
-    padding: 118px 0;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: var(--hero-gradient), url(../images/hero/herotel1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  @media screen and  (min-device-pixel-ratio: 2),
+  background-color: var(--bgr-dark-color);
+
+  padding: 118px 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: var(--hero-gradient), url(../images/hero/herotel1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-      background-image: var(--hero-gradient),
-        url(../images/hero/herotel2x.jpg);
+    background-image: var(--hero-gradient), url(../images/hero/herotel2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: var(--hero-gradient), url(../images/hero/herotab1x.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: var(--hero-gradient), url(../images/hero/herotab2x.jpg);
     }
-   
+  }
 
-    @media screen and (min-width: 768px) {
-      background-image:var(--hero-gradient),
-      url(../images/hero/herotab1x.jpg);
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: var(--hero-gradient),
-       url(../images/hero/herotab2x.jpg);
-      }
-    }  
-
-
-    @media screen and (min-width: 1200px) {
-      width: 1600px;
-      padding: 200px 0;
-      background-image: var(--hero-gradient),
-      url(../images/hero/herocomp1x.jpg);
-      @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        background-image: var(--hero-gradient),
-        url(../images/hero/herocomp2x.jpg);
-      }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    padding: 200px 0;
+    background-image: var(--hero-gradient), url(../images/hero/herocomp1x.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: var(--hero-gradient), url(../images/hero/herocomp2x.jpg);
     }
-        
+  }
 }
 
 .hero__title {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--main-light-color);
-    max-width: 360px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--main-light-color);
+  max-width: 360px;
 
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     max-width: 696px;
     font-size: 44px;
     line-height: 1.37;
@@ -63,38 +54,38 @@
 }
 
 .hero__container {
-    text-align: center;
+  text-align: center;
 }
 
-.hero__container>h1 {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+.hero__container > h1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .hero__container button {
-    padding: 10px 32px;
-    margin-left: auto;
-    margin-right: auto;
+  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .button__order {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    border-style: hidden;
-    border-radius: 4px;
-    color: var(--main-light-color);
-    background-color: var(--brand-color);
-    box-shadow: var(--hero-btn-shadow);
-    cursor: pointer;
-    padding: 10px 32px;
-    margin: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border-style: hidden;
+  border-radius: 4px;
+  color: var(--main-light-color);
+  background-color: var(--brand-color);
+  box-shadow: var(--hero-btn-shadow);
+  cursor: pointer;
+  padding: 10px 32px;
+  margin: auto;
 
-&:hover,
-&:focus {
+  &:hover,
+  &:focus {
     background-color: var(--main-light-color);
     color: var(--brand-color);
-}
+  }
 }

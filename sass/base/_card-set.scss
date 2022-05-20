@@ -1,19 +1,12 @@
 .card-set {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--list-gap));
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--list-gap));
+  margin-left: calc(-1 * var(--list-gap));
 
-    @media screen and (max-width: 1199px) {
-      margin-left: calc(-1 * var(--list-gap));
-    }
-
-    @media screen and (max-width: 767px) {
-      row-gap: 20px;
-    }
-
-.card-item {
+  .card-item {
     margin-top: var(--list-gap);
-    margin-left:  var(--list-gap);
+    margin-left: var(--list-gap);
     flex-basis: calc(100% / var(--list-item) - var(--list-gap));
- }
+  }
 }
