@@ -93,6 +93,12 @@ li {
   margin-top: calc(-1 * var(--list-gap));
 }
 
+@media screen and (max-width: 1199px) {
+  .card-set {
+    margin-left: calc(-1 * var(--list-gap));
+  }
+}
+
 @media screen and (max-width: 767px) {
   .card-set {
     row-gap: 20px;
@@ -687,9 +693,22 @@ input:hover, input:focus {
   padding: 0 40px;
 }
 
+@media screen and (max-width: 440px) {
+  .mobile-menu__frame {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
 .mobile-menu-navigation {
   display: block;
   margin-bottom: calc(64px + (40vh - 30vw));
+}
+
+@media screen and (max-width: 411px) {
+  .mobile-menu-navigation {
+    margin-bottom: calc(10% + (50vh - 50vw));
+  }
 }
 
 .mobile-menu-navigation__item {

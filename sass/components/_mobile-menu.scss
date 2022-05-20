@@ -32,19 +32,19 @@
     height: 100vh;
     padding: 0 40px;
 
-    // @media screen and (max-width: 440px) {
-    //     max-width: 100%;
-    //     padding: 0 10px;
-    // }
+    @media screen and (max-width: 440px) {
+        max-width: 100%;
+        padding: 0 10px;
+    }
 }
 
 .mobile-menu-navigation {
     display: block;
     margin-bottom: calc(64px + (40vh - 30vw));
 
-    // @media screen and (max-width: 411px) {
-    //     margin-bottom: calc(10% + (50vh - 50vw));
-    // }
+    @media screen and (max-width: 411px) {
+        margin-bottom: calc(10% + (50vh - 50vw));
+    }
 
     &__item {
         margin-bottom: 32px;
