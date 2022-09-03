@@ -277,7 +277,6 @@ li {
 @media screen and (min-width: 1200px) {
   .follow-form__input {
     display: inline-block;
-    margin-left: 12px;
     width: 358px;
   }
 }
